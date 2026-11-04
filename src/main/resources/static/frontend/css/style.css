@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #1c1e21;
+}
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 40px;
+}
+.welcome-section {
+    width: 500px;
+}
+
+.welcome-section h1 {
+    color: #1877f2;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    font-size: 25px;
+    line-height: 1.4;
+}
+.login-section {
+    width: 400px;
+    text-align: center;
+}
+
+.login-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #0002;
+}
+.login-card input {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 12px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.login-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.login-button:hover {
+    background-color: #166fe5;
+}
+.forgot-password {
+    display: block;
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+.login-card hr {
+    border: none;
+    border-top: 1px solid #dadde1;
+    margin: 20px 0;
+}
+.create-account {
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.create-account:hover {
+    background-color: #36a420;
+}
+.page-caption {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #1c1e21;
+}
+@media (max-width: 850px) {
+
+    .login-page {
+        flex-direction: column;
+        gap: 30px;
+        padding: 25px;
+    }
+
+    .welcome-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .welcome-section h1 {
+        font-size: 45px;
+    }
+
+    .welcome-section p {
+        font-size: 18px;
+    }
+
+    .login-section {
+        width: 100%;
+        max-width: 400px;
+    }
+
+}
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    padding-right: 65px;
+}
+
+.password-container button {
+    position: absolute;
+    right: 12px;
+    top: 15px;
+    border: none;
+    background: none;
+    color: #1877f2;
+    font-weight: bold;
+    cursor: pointer;
+}
