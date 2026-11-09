@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Climentos | Home</title>
+
+    <link rel="stylesheet" href="css/welcome.css">
+</head>
+
+<body>
+
+    <!-- TOP NAVIGATION -->
+    <header class="topbar">
+
+        <a href="welcome.html" class="brand">
+            climentos<span>.</span>
+        </a>
+
+        <div class="top-search">
+            <span>⌕</span>
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search Climentos">
+        </div>
+
+        <div class="top-user">
+            <span class="avatar" id="topAvatar">C</span>
+            <span id="topName">Welcome</span>
+        </div>
+
+    </header>
+
+
+    <!-- MAIN LAYOUT -->
+    <main class="layout">
+
+        <!-- LEFT SIDEBAR -->
+        <aside class="side-panel">
+
+            <div class="profile-mini">
+
+                <div class="avatar avatar-large" id="sideAvatar">
+                    C
+                </div>
+
+                <div>
+                    <strong id="sideName">Your profile</strong>
+                    <small>Welcome to your space</small>
+                </div>
+
+            </div>
+
+
+            <nav class="side-nav">
+
+                <a class="active" href="welcome.html">
+                    <span>⌂</span>
+                    Home
+                </a>
+
+                <a href="#" id="friendsLink">
+                    <span>♧</span>
+                    Friends
+                </a>
+
+                <a href="#" id="messagesLink">
+                    <span>✉</span>
+                    Messages
+                </a>
+
+                <a href="#" id="savedLink">
+                    <span>♡</span>
+                    Saved posts
+                </a>
+
+            </nav>
+
+
+            <div class="side-note">
+
+                <strong>Your community, your moments.</strong>
+
+                <p>
+                    Share updates and stay connected
+                    with people who matter.
+                </p>
+
+            </div>
+
+
+            <button class="logout-button" id="logoutButton">
+                Log out
+            </button>
+
+        </aside>
+
+
+
+        <!-- CENTER FEED -->
+        <section class="feed-column">
+
+            <div class="welcome-heading">
+
+                <div>
+
+                    <p class="eyebrow">YOUR SOCIAL SPACE</p>
+
+                    <h1>
+                        Good to see you
+                        <span id="helloName">there</span> ✨
+                    </h1>
+
+                    <p>
+                        Share a thought, catch up,
+                        and stay connected.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CREATE POST -->
+            <section class="composer card">
+
+                <div class="composer-top">
+
+                    <div class="avatar" id="composerAvatar">
+                        C
+                    </div>
+
+                    <textarea
+                        id="postContent"
+                        maxlength="3000"
+                        placeholder="What's on your mind?">
+                    </textarea>
+
+                </div>
+
+
+                <div class="composer-bottom">
+
+                    <span>
+                        Share something with your community
+                    </span>
+
+                    <button id="postButton" class="primary-button">
+                        Post <span>➤</span>
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- FEED HEADING -->
+            <div class="feed-title">
+
+                <div>
+
+                    <h2>Your feed</h2>
+
+                    <p>
+                        Fresh updates from your community
+                    </p>
+
+                </div>
+
+                <button id="refreshButton" class="soft-button">
+                    ↻ Refresh
+                </button>
+
+            </div>
+
+
+
+            <!-- POSTS WILL APPEAR HERE -->
+            <div id="feed" class="feed-list">
+
+                <div class="loading-card card">
+                    Loading your feed…
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- RIGHT SIDEBAR -->
+        <aside class="right-panel">
+
+            <div class="right-card card">
+
+                <p class="eyebrow">A LITTLE REMINDER</p>
+
+                <h3>
+                    Good things happen when we connect.
+                </h3>
+
+                <p>
+                    Every post is a chance to share,
+                    learn, and make someone's day
+                    a little brighter.
+                </p>
+
+                <div class="decorative-hearts">
+                    ♡　✿　♡
+                </div>
+
+            </div>
+
+
+            <div class="right-card card community-card">
+
+                <h3>Community guidelines</h3>
+
+                <ul>
+                    <li>Be kind and respectful.</li>
+                    <li>Share thoughtfully.</li>
+                    <li>Keep personal information safe.</li>
+                </ul>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+    <!--NOTIFICATION MESSAGE -->
+    <div id="toast" class="toast" role="status"></div>
+
+
+    <script src="javascript/welcome.js"></script>
+
+</body>
+</html>

@@ -1,52 +1,399 @@
- <!DOCTYPE html>
- <html lang="en">
-    <head>
-        <meta charset-"UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Climentos</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <div class="login-page">
-            <div class="welcome-section">
-                <h1>Climentos</h1>
-                <p>connect with friends and rhe world around you</p>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climentos - All People at One Place</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/climentos-additions.css">
+</head>
+
+<body>
+
+    <div class="background-shape shape-one"></div>
+    <div class="background-shape shape-two"></div>
+
+    <!-- HEADER -->
+    <header class="navbar">
+        <a href="index.html" class="brand">
+            <div class="brand-logo">C</div>
+            <span>Climentos</span>
+        </a>
+    </header>
+
+    <main class="main-container">
+
+        <!-- LEFT SECTION -->
+        <section class="social-section" id="socialSection">
+
+            <div class="welcome-content">
+                <h1>
+                    All People at
+                    <span>One Place</span>
+                </h1>
+
+                <p>
+                    Connect with friends, share your moments
+                    and discover a world of possibilities
+                    with Climentos.
+                </p>
             </div>
-            <div class="login-section">
+
+            <div class="orbit-area">
+
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="central-profile">
+                    <img src="https://i.pravatar.cc/300?img=47" alt="Profile">
+                </div>
+
+                <div class="profile profile-one">
+                    <img src="https://i.pravatar.cc/150?img=12" alt="User">
+                </div>
+
+                <div class="profile profile-two">
+                    <img src="https://i.pravatar.cc/150?img=32" alt="User">
+                </div>
+
+                <div class="profile profile-three">
+                    <img src="https://i.pravatar.cc/150?img=44" alt="User">
+                </div>
+
+                <div class="profile profile-four">
+                    <img src="https://i.pravatar.cc/150?img=13" alt="User">
+                </div>
+
+                <div class="profile profile-five">
+                    <img src="https://i.pravatar.cc/150?img=68" alt="User">
+                </div>
+
+                <div class="floating-icon community-icon">♟</div>
+                <div class="floating-icon chat-icon">●●●</div>
+                <div class="floating-icon like-icon">♥</div>
+                <div class="floating-icon photo-icon">▣</div>
+
+            </div>
+        </section>
+
+        <!-- RIGHT SECTION -->
+        <section class="login-section">
 
             <div class="login-card">
 
-                <input type="text"
-                    placeholder="Email address or phone number">
-                <div>
-                    <input type="password" id="password" placeholder="Password">
-                    <button type="button" id="togglePassword">
-                        Show
-                    </button>
-                </div>
+                <!-- LOGIN VIEW -->
+                <section id="loginView" class="form-view active-view">
 
-                <button class="login-button">
-                    Log In
-                </button>
+                    <div class="login-heading">
+                        <h2>
+                            Welcome Back to
+                            <span>Climentos</span>
+                        </h2>
 
-                <a href="#" class="forgot-password">
-                    Forgotten password?
-                </a>
+                        <div class="heading-underline"></div>
 
-                <hr>
+                        <p>
+                            Login to your account and continue
+                            connecting with your world.
+                        </p>
+                    </div>
 
-                <button class="create-account">
-                    Create New Account
-                </button>
+                    <form id="loginForm" novalidate>
+
+                        <div class="input-container">
+                            <span class="input-icon">✉</span>
+
+                            <input
+                                type="text"
+                                id="email"
+                                placeholder="Email address or phone number"
+                                autocomplete="username"
+                                required>
+                        </div>
+
+                        <div class="input-container">
+                            <span class="input-icon">♙</span>
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Password"
+                                autocomplete="current-password"
+                                required>
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                id="togglePassword"
+                                aria-label="Show password">
+
+                                <img
+                                    id="eyeIcon"
+                                    src="https://cdn-icons-png.flaticon.com/512/159/159604.png"
+                                    alt="">
+                            </button>
+                        </div>
+
+                        <p id="errorMessage" class="error-message"></p>
+
+                        <button type="submit" class="login-button">
+                            Log In
+                        </button>
+
+                    </form>
+
+                    <a href="#" class="forgot-password" id="showForgot">
+                        Forgot password?
+                    </a>
+
+                    <div class="divider">
+                        <span></span>
+                        <p>Or continue with</p>
+                        <span></span>
+                    </div>
+
+                    <div class="social-login">
+
+                        <button type="button" class="social-button" id="facebookButton">
+                            <span class="facebook-icon">f</span>
+                            Facebook
+                        </button>
+
+                        <button type="button" class="social-button" id="googleButton">
+                            <span class="google-icon">G</span>
+                            Google
+                        </button>
+
+                    </div>
+
+                    <p class="signup-text">
+                        Don't have an account?
+                        <a href="#" id="showRegister">Create New Account</a>
+                    </p>
+
+                </section>
+
+                <!-- REGISTRATION VIEW -->
+                <section id="registerView" class="form-view">
+
+                    <div class="login-heading">
+                        <h2>
+                            Create Your
+                            <span>Account</span>
+                        </h2>
+
+                        <div class="heading-underline"></div>
+
+                        <p>
+                            Join Climentos and start connecting
+                            with people around you.
+                        </p>
+                    </div>
+
+                    <form id="registerForm" novalidate>
+
+                        <div class="input-container">
+                            <span class="input-icon">♙</span>
+                            <input
+                                type="text"
+                                id="firstName"
+                                placeholder="First Name"
+                                required>
+                        </div>
+
+                        <div class="input-container">
+                            <span class="input-icon">♙</span>
+                            <input
+                                type="text"
+                                id="surname"
+                                placeholder="Surname"
+                                required>
+                        </div>
+
+                        <div class="input-container">
+                            <span class="input-icon">✉</span>
+                            <input
+                                type="email"
+                                id="registerEmail"
+                                placeholder="Email Address"
+                                required>
+                        </div>
+
+                        <div class="input-container">
+                            <span class="input-icon">☎</span>
+                            <input
+                                type="tel"
+                                id="mobile"
+                                placeholder="Mobile Number"
+                                required>
+                        </div>
+
+                        <!-- CREATE PASSWORD -->
+                        <div class="input-container">
+                            <span class="input-icon">♙</span>
+
+                            <input
+                                type="password"
+                                id="registerPassword"
+                                placeholder="Create Password"
+                                required>
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                id="toggleRegisterPassword"
+                                aria-label="Show password">
+
+                                <img
+                                    src="https://cdn-icons-png.flaticon.com/512/159/159604.png"
+                                    alt="">
+                            </button>
+                        </div>
+
+                        <!-- PASSWORD STRENGTH -->
+                        <div class="password-feedback">
+
+                            <div class="password-strength">
+                                <div class="strength-bar">
+                                    <div id="strengthFill"></div>
+                                </div>
+
+                                <p id="strengthText">
+                                    Password strength
+                                </p>
+                            </div>
+
+                            <div class="password-requirements">
+                                <p id="reqLength">✗ At least 8 characters</p>
+                                <p id="reqLower">✗ One lowercase letter</p>
+                                <p id="reqUpper">✗ One uppercase letter</p>
+                                <p id="reqNumber">✗ One number</p>
+                                <p id="reqSpecial">✗ One special character</p>
+                            </div>
+
+                        </div>
+
+                        <!-- CONFIRM PASSWORD -->
+                        <div class="input-container">
+                            <span class="input-icon">♙</span>
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                placeholder="Confirm Password"
+                                required>
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                id="toggleConfirmPassword"
+                                aria-label="Show password">
+
+                                <img
+                                    src="https://cdn-icons-png.flaticon.com/512/159/159604.png"
+                                    alt="">
+                            </button>
+                        </div>
+
+                        <!-- DATE OF BIRTH -->
+                        <div class="input-container">
+                            <span class="input-icon">▦</span>
+
+                            <input
+                                type="date"
+                                id="dateOfBirth"
+                                aria-label="Date of Birth"
+                                required>
+                        </div>
+
+                        <!-- GENDER -->
+                        <div class="input-container">
+                            <span class="input-icon">⚧</span>
+
+                            <select id="gender" required>
+                                <option value="">Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                                <option value="Prefer not to say">
+                                    Prefer not to say
+                                </option>
+                            </select>
+                        </div>
+
+                        <p id="registerError"
+                           class="error-message form-message"></p>
+
+                        <p id="registerSuccess"
+                           class="success-message form-message"></p>
+
+                        <button type="submit" class="login-button">
+                            Create Account
+                        </button>
+
+                    </form>
+
+                    <p class="signup-text">
+                        Already have an account?
+                        <a href="#" id="showLogin">Log In</a>
+                    </p>
+
+                </section>
+
+                <!-- FORGOT PASSWORD VIEW -->
+                <section id="forgotView" class="form-view">
+
+                    <div class="login-heading">
+                        <h2>
+                            Reset Your
+                            <span>Password</span>
+                        </h2>
+
+                        <div class="heading-underline"></div>
+
+                        <p>
+                            Enter your registered email address.
+                            We'll send you a password reset link.
+                        </p>
+                    </div>
+
+                    <form id="forgotForm" novalidate>
+
+                        <div class="input-container">
+                            <span class="input-icon">✉</span>
+
+                            <input
+                                type="email"
+                                id="recoveryContact"
+                                placeholder="Email Address"
+                                autocomplete="email"
+                                required>
+                        </div>
+
+                        <p id="forgotMessage" class="form-message"></p>
+
+                        <button type="submit" class="login-button">
+                            Send Reset Link
+                        </button>
+
+                    </form>
+
+                    <p class="signup-text">
+                        <a href="#" id="backToLogin">
+                            Back to Login
+                        </a>
+                    </p>
+
+                </section>
 
             </div>
+        </section>
 
-            <p class="page-caption">
-                Create a page for your community or business.
-            </p>
+    </main>
 
-        </div>
-
-    </div>
     <script src="javascript/app.js"></script>
-    </body>
+
+</body>
+</html>
